@@ -4,7 +4,8 @@ const phrases = [
     [
       'What',
       'Why',
-      'Where'
+      'Where',
+      'How',
     ],
     'You need to ask more details'
   ],
@@ -33,10 +34,12 @@ const phrases = [
       'Where is tent',
       'Where is the tent',
     ],
-    'The women is between man and tent'
+    'The tent is on the right'
   ],
   [
     [
+      'How does she look',
+      'How does she look like',
       'How does the women look',
       'How does the women look like',
       'How is the women dressed',
@@ -45,6 +48,8 @@ const phrases = [
   ],
   [
     [
+      'How does he look',
+      'How does he look like',
       'How does the man look',
       'How does the man look like',
       'How is the man dressed',
@@ -67,6 +72,7 @@ const phrases = [
       'Where are they',
       'Where is the couple',
       'Where is that place',
+      'Where is the place',
     ],
     'The couple is in the mountains',
   ],
@@ -75,20 +81,44 @@ const phrases = [
       'What are they doing',
       'What is the couple doing',
       'What is the man and women doing',
-      'What is the man doing',
-      'What is the woman doing',
-      'What is man doing',
-      'What is woman doing',
     ],
     'The couple is sitting and preparing meal',
   ],
   [
     [
+      'What is he doing',
+      'What is the man doing',
+      'What is man doing',
+    ],
+    'The man is sitting and preparing meal',
+  ],
+  [
+    [
+      'What is she doing',
+      'What is the woman doing',
+      'What is woman doing',
+    ],
+    'The woman is sitting and preparing meal',
+  ],
+  [
+    [
+      'Why they sit',
       'Why are they sitting',
       'Why is the couple sitting',
       'Why is the couple on the ground',
+      'Why is he sitting',
+      'Why is she sitting',
+      'Why does he sit',
+      'Why does she sit',
     ],
     'The couple is sitting because they are preparing the meal',
+  ],
+  [
+    [
+      'Where are they sitting',
+      'Where is the couple sitting',
+    ],
+    'The couple is sitting on the ground',
   ],
 
 

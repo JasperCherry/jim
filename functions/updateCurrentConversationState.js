@@ -1,6 +1,6 @@
 const updateCurrentConversationState = (currentConversationState, digitalString) => {
   for (let x = 0; x < currentConversationState.length; x++) {
-    currentConversationState[x] = currentConversationState[x] / 2;
+    currentConversationState[x] = currentConversationState[x] * 0.5;
     if (currentConversationState[x] < 0.1) {
       currentConversationState[x] = 0;
     }

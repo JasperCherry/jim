@@ -4,7 +4,7 @@ const updateCurrentConversationState = require('./updateCurrentConversationState
 
 const getOutput = (commonWords, phrases, digitalPhrases, conversationState, input) => {
   const digitalInput = getDigitalArray(input, commonWords);
-  const currentConversationState = updateCurrentConversationState(conversationState, digitalInput);
+  let currentConversationState = updateCurrentConversationState(conversationState, digitalInput);
   const bestPhraseMatch = {
     score: 0,
     phrase: '',

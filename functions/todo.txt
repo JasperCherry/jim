@@ -1,4 +1,1 @@
 text filtering for special characters ? ! etc
-
-
-good coverage of questions
