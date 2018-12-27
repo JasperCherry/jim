@@ -1,8 +1,9 @@
-const readCommonWords = require('./utilityFunctions/readCommonWords');
-const getDigitalPhrases = require('./utilityFunctions/getDigitalPhrases');
-const getOutput = require('./utilityFunctions/getOutput');
+const readCommonWords = require('./functions/readCommonWords');
+const getDigitalPhrases = require('./functions/getDigitalPhrases');
+const getOutput = require('./functions/getOutput');
 const phrases = require('./data/phrases');
 const stdin = process.openStdin();
+
 
 const start = async () => {
   const commonWords = await readCommonWords();
