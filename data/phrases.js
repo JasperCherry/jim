@@ -1,4 +1,4 @@
-
+// phrases must be very specific, only essential words
 const phrases = [
   [
     [
@@ -7,7 +7,7 @@ const phrases = [
       'Where',
       'How',
     ],
-    'You need to ask more details'
+    'Sorry, you need to be more specific for me to understand'
   ],
 
   // man

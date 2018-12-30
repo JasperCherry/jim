@@ -1,7 +1,5 @@
 text filtering for special characters ? ! etc
 
 
-filter on blocking same answer and asking for more details
-
 
 levenshtein distance words correction according to dictionary

@@ -9,17 +9,24 @@ const start = async () => {
   const commonWords = await readCommonWords();
   const digitalPhrases = getDigitalPhrases(phrases, commonWords);
   let currentConversationState = new Array(commonWords.length).fill(0);
+  let lastAnswer = '';
 
 
-  console.log('Hi, ask me something about the picture');
+  console.log('start---> Ask me something about the picture');
 
-
+  // if the answer is repeating then bot asks to be more specific
   stdin.addListener("data", function(d) {
     let input = d.toString().trim();
     let output = getOutput(commonWords, phrases, digitalPhrases, currentConversationState, input);
     currentConversationState = output.currentConversationState;
-    console.log('answer--->',output.phrase);
-    // console.log(output.score);
+    if (output.phrase === 'Sorry, you need to be more specific for me to understand') {
+      console.log('answer--->',output.phrase);
+    } else if (lastAnswer === output.phrase) {
+      console.log('answer---> Sorry, you need to be more specific for me to understand');
+    } else {
+      lastAnswer = output.phrase;
+      console.log('answer--->',output.phrase);
+    }
   });
 }
 
