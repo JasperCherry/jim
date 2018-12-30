@@ -49,7 +49,7 @@ const phrases = [
     'The man is wearing green jacket and gray shorts'
   ],
 
-  // women
+  // woman
   [
     [
       'What is woman doing',

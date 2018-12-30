@@ -1,5 +1,9 @@
-text filtering for special characters ? ! etc
-
-
-
 levenshtein distance words correction according to dictionary
+
+
+
+output all words that are valued during process
+
+
+
+key words to value more? how, what, where, why

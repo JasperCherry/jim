@@ -1,6 +1,7 @@
 const readCommonWords = require('./functions/readCommonWords');
 const getDigitalPhrases = require('./functions/getDigitalPhrases');
 const getOutput = require('./functions/getOutput');
+const filterInput = require('./functions/filterInput');
 const phrases = require('./data/phrases');
 const stdin = process.openStdin();
 
@@ -14,11 +15,15 @@ const start = async () => {
 
   console.log('start---> Ask me something about the picture');
 
+
   // if the answer is repeating then bot asks to be more specific
   stdin.addListener("data", function(d) {
     let input = d.toString().trim();
+    input = filterInput(input);
+
     let output = getOutput(commonWords, phrases, digitalPhrases, currentConversationState, input);
     currentConversationState = output.currentConversationState;
+
     if (output.phrase === 'Sorry, you need to be more specific for me to understand') {
       console.log('answer--->',output.phrase);
     } else if (lastAnswer === output.phrase) {
