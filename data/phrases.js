@@ -9,128 +9,160 @@ const phrases = [
     ],
     'You need to ask more details'
   ],
+
+  // man
   [
     [
-      'What is in the picture',
+      'What is man doing',
+      'What is he doing'
     ],
-    'Theres a couple and a tent'
+    'The man is sitting and preparing meal'
+  ],
+  [
+    [
+      'Why is man preparing meal',
+      'Why is he preparing meal',
+    ],
+    'The man is probably hungry'
+  ],
+  [
+    [
+      'Why is man sitting',
+      'Why is he sitting',
+    ],
+    'Because he is preparing meal'
   ],
   [
     [
       'Where is man',
-      'Where is the man',
+      'Where is he',
     ],
-    'The man is on the left from women'
+    'The man is on the left'
   ],
   [
     [
-      'Where is women',
-      'Where is the women',
+      'What is man wearing',
+      'How does man look',
+      'What is he wearing',
+      'How does he look',
     ],
-    'The women is between man and tent'
+    'The man is wearing green jacket and gray shorts'
   ],
+
+  // women
+  [
+    [
+      'What is woman doing',
+      'What is she doing'
+    ],
+    'The woman is sitting and preparing meal'
+  ],
+  [
+    [
+      'Why is woman preparing meal',
+      'Why is she preparing meal',
+    ],
+    'The woman is probably hungry'
+  ],
+  [
+    [
+      'Why is woman sitting',
+      'Why is she sitting',
+    ],
+    'Because she is preparing meal'
+  ],
+  [
+    [
+      'Where is woman',
+      'Where is she',
+    ],
+    'The woman is between the man and the tent'
+  ],
+  [
+    [
+      'What is woman wearing',
+      'How does woman look',
+      'What is she wearing',
+      'How does she look',
+    ],
+    'The woman is wearing green jacket and gray shorts'
+  ],
+
+  // couple
+  [
+    [
+      'What is couple doing',
+      'What are they doing'
+    ],
+    'The couple is sitting and preparing meal'
+  ],
+  [
+    [
+      'Why are they',
+      'Why are they preparing meal',
+    ],
+    'The couple is probably hungry'
+  ],
+  [
+    [
+      'Why are they sitting',
+      'Why is couple sitting',
+    ],
+    'Because they are preparing meal'
+  ],
+  [
+    [
+      'Where is couple',
+      'Where are they',
+    ],
+    'The couple is next to the tent'
+  ],
+  [
+    [
+      'What are they wearing',
+      'How does couple look',
+    ],
+    'The woman is wearing green jacket and gray shorts'
+  ],
+
+  // tent
   [
     [
       'Where is tent',
-      'Where is the tent',
     ],
     'The tent is on the right'
   ],
   [
     [
-      'How does she look',
-      'How does she look like',
-      'How does the women look',
-      'How does the women look like',
-      'How is the women dressed',
+      'How does tent look',
+      'How tent looks',
     ],
-    'The women has green jacket and gray shorts'
-  ],
-  [
-    [
-      'How does he look',
-      'How does he look like',
-      'How does the man look',
-      'How does the man look like',
-      'How is the man dressed',
-    ],
-    'The man has green jacket and gray shorts'
-  ],
-  [
-    [
-      'How does the tent look',
-      'How does the tent look like',
-    ],
-    'The tent is green',
-  ],
-  [
-    [
-      'Where is the scene',
-      'What is the scenery',
-      'What is the scenery in the background',
-      'Where is the background',
-      'Where are they',
-      'Where is the couple',
-      'Where is that place',
-      'Where is the place',
-    ],
-    'The couple is in the mountains',
-  ],
-  [
-    [
-      'What are they doing',
-      'What is the couple doing',
-      'What is the man and women doing',
-    ],
-    'The couple is sitting and preparing meal',
-  ],
-  [
-    [
-      'What is he doing',
-      'What is the man doing',
-      'What is man doing',
-    ],
-    'The man is sitting and preparing meal',
-  ],
-  [
-    [
-      'What is she doing',
-      'What is the woman doing',
-      'What is woman doing',
-    ],
-    'The woman is sitting and preparing meal',
-  ],
-  [
-    [
-      'Why they sit',
-      'Why are they sitting',
-      'Why is the couple sitting',
-      'Why is the couple on the ground',
-      'Why is he sitting',
-      'Why is she sitting',
-      'Why does he sit',
-      'Why does she sit',
-    ],
-    'The couple is sitting because they are preparing the meal',
-  ],
-  [
-    [
-      'Where are they sitting',
-      'Where is the couple sitting',
-    ],
-    'The couple is sitting on the ground',
+    'The tent is green'
   ],
 
-
-  /*
+  // place
   [
     [
-      '',
-      '',
+      'Where is this place',
+      'Where is it',
     ],
-    ''
+    'This place is in the mountains'
   ],
-  */
+  [
+    [
+      'How does this place look',
+      'How this place looks',
+    ],
+    'This place is full of snow'
+  ],
+
+  // picture
+  [
+    [
+      'What is in picture',
+    ],
+    'There is a couple with a tent'
+  ],
 ];
 
 

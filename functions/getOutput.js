@@ -4,14 +4,17 @@ const updateCurrentConversationState = require('./updateCurrentConversationState
 
 const getOutput = (commonWords, phrases, digitalPhrases, conversationState, input) => {
   const digitalInput = getDigitalArray(input, commonWords);
-  let currentConversationState = updateCurrentConversationState(conversationState, digitalInput);
+
+  // add values to the words appearing in the question
+  let currentConversationState = updateCurrentConversationState(conversationState, digitalInput, true);
+
   const bestPhraseMatch = {
     score: 0,
     phrase: '',
     digitalPhrase: [],
   }
 
-
+  // find the best matching phrase
   for (let x = 0; x < digitalPhrases.length; x++) {
     for (let p = 0; p < digitalPhrases[x][0].length; p++) {
       let currentPhraseMatchScore = 0;
@@ -34,21 +37,14 @@ const getOutput = (commonWords, phrases, digitalPhrases, conversationState, inpu
     }
   }
 
+  // add values to the words appearing in the answer
+  currentConversationState = updateCurrentConversationState(conversationState, bestPhraseMatch.digitalPhrase, false);
 
-  if (bestPhraseMatch.score > 0) {
-    return output = {
-      phrase: bestPhraseMatch.phrase,
-      digitalPhrase: bestPhraseMatch.digitalPhrase,
-      score: bestPhraseMatch.score,
-      currentConversationState,
-    }
-  } else {
-    return output = {
-      phrase: 'Sorry, I cant understand. You need to be more precise.',
-      digitalPhrase: bestPhraseMatch.digitalPhrase,
-      score: bestPhraseMatch.score,
-      currentConversationState,
-    }
+  return output = {
+    phrase: bestPhraseMatch.phrase,
+    digitalPhrase: bestPhraseMatch.digitalPhrase,
+    score: bestPhraseMatch.score,
+    currentConversationState,
   }
 }
 
