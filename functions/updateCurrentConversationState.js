@@ -2,8 +2,7 @@ const updateCurrentConversationState = (currentConversationState, digitalString,
   // if the phrase comes from question avoid value weakening
   if(isQuestion) {
     for (let x = 0; x < currentConversationState.length; x++) {
-      // 0.49 ensures that two matching words from last answer are then less valuable then one word from new question
-      currentConversationState[x] = currentConversationState[x] * 0.49;
+      currentConversationState[x] = currentConversationState[x] * 0.5;
       if (currentConversationState[x] < 0.1) {
         currentConversationState[x] = 0;
       }

@@ -24,6 +24,8 @@ const start = async () => {
     let output = getOutput(commonWords, phrases, digitalPhrases, currentConversationState, input);
     currentConversationState = output.currentConversationState;
 
+
+
     if (output.phrase === 'Sorry, you need to be more specific for me to understand') {
       console.log('answer--->',output.phrase);
     } else if (lastAnswer === output.phrase) {
@@ -32,6 +34,18 @@ const start = async () => {
       lastAnswer = output.phrase;
       console.log('answer--->',output.phrase);
     }
+
+
+    /*
+    // show the current valued words and points
+    console.log('XXX');
+    for (let x = 0; x < currentConversationState.length; x++) {
+      if (currentConversationState[x] !== 0) {
+        console.log(commonWords[x], currentConversationState[x]);
+      }
+    }
+    console.log('XXX');
+    */
   });
 }
 

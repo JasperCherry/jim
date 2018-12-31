@@ -9,7 +9,6 @@ const phrases = [
     ],
     'Sorry, you need to be more specific for me to understand'
   ],
-
   // man
   [
     [
@@ -45,6 +44,8 @@ const phrases = [
       'How does man look',
       'What is he wearing',
       'How does he look',
+      'How he looks',
+      'How man looks',
     ],
     'The man is wearing green jacket and gray shorts'
   ],
@@ -84,6 +85,8 @@ const phrases = [
       'How does woman look',
       'What is she wearing',
       'How does she look',
+      'How she looks',
+      'How woman looks',
     ],
     'The woman is wearing green jacket and gray shorts'
   ],
@@ -120,6 +123,8 @@ const phrases = [
   [
     [
       'What are they wearing',
+      'What is couple wearing',
+      'How they look',
       'How does couple look',
     ],
     'The woman is wearing green jacket and gray shorts'
