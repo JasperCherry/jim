@@ -2,7 +2,7 @@ const updateCurrentConversationState = (currentConversationState, digitalString,
   // if the phrase comes from question avoid value weakening
   if(isQuestion) {
     for (let x = 0; x < currentConversationState.length; x++) {
-      currentConversationState[x] = currentConversationState[x] * 0.5;
+      currentConversationState[x] = currentConversationState[x] * 0.45;
       if (currentConversationState[x] < 0.1) {
         currentConversationState[x] = 0;
       }
