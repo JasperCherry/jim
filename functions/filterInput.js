@@ -37,6 +37,7 @@ const filterInput = (input) => {
     for (let z = 0; z < letters.length; z++) {
       if (input[x].toLowerCase() === letters[z]) {
         isLetter = true;
+        break;
       }
     }
 
@@ -47,7 +48,17 @@ const filterInput = (input) => {
     }
   }
 
-  return filteredInput;
+  filteredInput = filteredInput.trim();
+
+  let noWhitespaceInput = filteredInput[0];
+
+  for (let x = 1; x < filteredInput.length; x++) {
+    if (!(filteredInput[x-1] === ' ' && filteredInput[x] === ' ')) {
+      noWhitespaceInput += filteredInput[x];
+    }
+  }
+
+  return noWhitespaceInput;
 }
 
 

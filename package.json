@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.5.3"
+    "bluebird": "^3.5.3",
+    "js-levenshtein": "^1.1.4"
   }
 }
