@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.3",
-    "js-levenshtein": "^1.1.4"
+    "js-levenshtein": "^1.1.4",
+    "readline-sync": "^1.4.9"
   }
 }

@@ -1,3 +1,4 @@
+const readlineSync = require('readline-sync');
 const readCommonWords = require('./functions/readCommonWords');
 const getDigitalPhrases = require('./functions/getDigitalPhrases');
 const getAllQuestionWords = require('./functions/getAllQuestionWords');
@@ -18,8 +19,9 @@ const start = async () => {
 
   console.log('start---> Ask me something about the picture');
 
-  stdin.addListener("data", function(d) {
-    let input = d.toString().trim();
+
+  while (true) {
+    let input = readlineSync.question();
     input = filterInput(input);
     input = fixInputWords(input, allQuestionWords, commonWords);
 
@@ -29,7 +31,6 @@ const start = async () => {
     const outputPhrase = filterOutput(output);
     console.log(outputPhrase);
 
-
     /*
     // show the current valued words and points
     console.log('-----------------');
@@ -38,10 +39,10 @@ const start = async () => {
         console.log(commonWords[x], currentConversationState[x]);
       }
     }
-    console.log('-----------------');z
+    console.log('-----------------');
     */
-  });
-}
+  }
+};
 
 
 start();
