@@ -164,7 +164,7 @@ const phrases = [
   // picture
   [
     [
-      'What is in picture',
+      'What is in the picture',
     ],
     'There is a couple with a tent'
   ],
